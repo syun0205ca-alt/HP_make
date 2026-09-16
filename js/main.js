@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Reveal on scroll
   const revealEls = document.querySelectorAll('.reveal');
-  const skillCards = document.querySelectorAll('.skill-card');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -46,21 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.15 });
 
   revealEls.forEach((el) => observer.observe(el));
-
-  const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const bar = entry.target.querySelector('.skill-bar span');
-        if (bar) {
-          bar.style.setProperty('--target-width', bar.style.width);
-        }
-        entry.target.classList.add('in-view');
-        skillObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  skillCards.forEach((el) => skillObserver.observe(el));
 
   // Contact form (front-end only placeholder)
   const form = document.getElementById('contactForm');
