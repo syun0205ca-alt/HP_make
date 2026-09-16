@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuki Sato | Portfolio</title>
+<meta name="description" content="Yuki Sato の個人ポートフォリオサイト。プロフィール、スキル、制作実績、お問い合わせ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="loader" id="loader"><span>Loading</span></div>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="logo">Yuki Sato</a>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="hero-eyebrow reveal">Welcome to my portfolio</p>
+    <h1 class="hero-title reveal">
+      <span class="hero-name">Yuki Sato</span>
+      <span class="hero-role">Web Designer &amp; Developer</span>
+    </h1>
+    <p class="hero-lead reveal">
+      ここに、あなたの自己紹介やキャッチコピーを入れましょう。<br>
+      静かで丁寧なものづくりを大切にしています。
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#works" class="btn btn-primary">実績を見る</a>
+      <a href="#contact" class="btn btn-outline">お問い合わせ</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span></span>
+    <p>Scroll</p>
+  </div>
+</section>
+
+<main>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-label reveal">About</p>
+      <h2 class="section-title reveal">自己紹介</h2>
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <div class="photo-frame"></div>
+        </div>
+        <div class="about-body reveal">
+          <p>
+            はじめまして、Yuki Sato です。ここにプロフィール文を入れてください。
+            経歴、大切にしている考え方、得意分野などを2〜3段落程度でまとめると
+            訪問者に伝わりやすくなります。
+          </p>
+          <p>
+            例: 制作会社にて◯年間、Web デザイン・コーディングに従事。
+            シンプルで使いやすく、かつ印象に残るデザインを心がけています。
+          </p>
+          <dl class="about-info">
+            <div>
+              <dt>Name</dt>
+              <dd>Yuki Sato（ここに氏名）</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Tokyo, Japan</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd>you@example.com</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <p class="section-label reveal">Skills</p>
+      <h2 class="section-title reveal">スキル</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3>HTML / CSS</h3>
+          <div class="skill-bar"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>JavaScript</h3>
+          <div class="skill-bar"><span style="width:75%"></span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>UI / UX Design</h3>
+          <div class="skill-bar"><span style="width:80%"></span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Illustrator / Photoshop</h3>
+          <div class="skill-bar"><span style="width:65%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section class="section" id="works">
+    <div class="section-inner">
+      <p class="section-label reveal">Works</p>
+      <h2 class="section-title reveal">制作実績</h2>
+      <div class="works-grid">
+        <article class="work-card reveal">
+          <div class="work-thumb work-thumb-1"></div>
+          <div class="work-body">
+            <h3>Project Title 01</h3>
+            <p>プロジェクトの概要をここに記載します。使用技術や役割など。</p>
+          </div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-thumb work-thumb-2"></div>
+          <div class="work-body">
+            <h3>Project Title 02</h3>
+            <p>プロジェクトの概要をここに記載します。使用技術や役割など。</p>
+          </div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-thumb work-thumb-3"></div>
+          <div class="work-body">
+            <h3>Project Title 03</h3>
+            <p>プロジェクトの概要をここに記載します。使用技術や役割など。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner">
+      <p class="section-label reveal">Contact</p>
+      <h2 class="section-title reveal">お問い合わせ</h2>
+      <p class="contact-lead reveal">お仕事のご依頼やご相談など、お気軽にお問い合わせください。</p>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">メッセージ</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">送信する</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Yuki Sato. All rights reserved.</p>
+</footer>
+
+<a href="#top" class="to-top" id="toTop" aria-label="ページトップへ">↑</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
